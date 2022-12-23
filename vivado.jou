@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 14 11:11:48 2022
+# Process ID: 16316
+# Current directory: D:/OHM/chula/hw lab/project_lab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18448 D:\OHM\chula\hw lab\project_lab\project_lab.xpr
+# Log file: D:/OHM/chula/hw lab/project_lab/vivado.log
+# Journal file: D:/OHM/chula/hw lab/project_lab\vivado.jou
+# Running On: OHM, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16867 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OHM/chula/hw lab/project_lab/project_lab.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/OHM/chula/hw lab/project_lab/project_lab.runs/impl_1/system.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/OHM/chula/hw lab/project_lab/project_lab.runs/impl_1/system.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
